@@ -9,10 +9,10 @@ function matrixGenerator(rows, columns) {
     for (let j = 0; j < columns; j++) {
       let randomNumber = Math.floor(Math.random() * (100 - 1)) + 1;
       newArr.push(randomNumber);
-    }
+    };
 
     result.push(newArr.sort());
-  }
+  };
 
   //Sort arrays in result by first index using selection sort
   for (let k = 0; k < result.length; k++) {
@@ -24,15 +24,14 @@ function matrixGenerator(rows, columns) {
         smallestIndex = m;
         smallestElement = result[m][0];
       };
-    }
+    };
 
     if (smallestIndex !== k) {
       let temp = result[k];
       result[k] = result[smallestIndex];
       result[smallestIndex] = temp;
     };
-
-  }
+  };
 
   return result;
 }
