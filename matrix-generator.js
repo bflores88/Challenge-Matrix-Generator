@@ -1,3 +1,5 @@
+"use-strict";
+
 function matrixGenerator(rows, columns) {
   // do work here
   let result = [];
