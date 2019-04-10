@@ -14,7 +14,7 @@ function matrixGenerator(rows, columns) {
     result.push(newArr.sort());
   }
 
-  //Sort arrays in result by first index
+  //Sort arrays in result by first index using selection sort
   for (let k = 0; k < result.length; k++) {
     let smallestIndex = k;
     let smallestElement = result[k][0];
