@@ -12,11 +12,11 @@ function matrixGenerator(rows, columns) {
       newArr.push(randomNumber);
     };
 
-    let sortArr = newArr.sort((a,b) => a-b);
+    let sortArr = newArr.sort((a, b) => a - b);
     result.push(sortArr);
   };
 
-  let sortResult = result.sort((a,b) => a[0] - b[0]);
+  let sortResult = result.sort((a, b) => a[0] - b[0]);
   return sortResult;
 }
 
